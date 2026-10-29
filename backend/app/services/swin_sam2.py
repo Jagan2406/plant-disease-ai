@@ -11,6 +11,11 @@ import torch
 from PIL import Image
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
+BACKEND_ROOT = Path(__file__).resolve().parents[2]
+for _p in (PROJECT_ROOT, BACKEND_ROOT):
+    _ps = str(_p)
+    if _ps not in sys.path:
+        sys.path.insert(0, _ps)
 
 SAM2_CHECKPOINT_URL = (
     "https://dl.fbaipublicfiles.com/segment_anything_2/092824/"

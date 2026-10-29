@@ -1,0 +1,1 @@
+"""Future SAM 2.1 plant-image segmentation stage."""
