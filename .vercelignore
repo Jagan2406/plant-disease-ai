@@ -1,0 +1,11 @@
+dataset/
+results/
+data/
+models/swin/
+frontend-backup-*/
+frontend-next-failed-*/
+api_result.json
+api_healthy.json
+api_scab.json
+.vscode/
+models/swin_sam2/best_model.pth

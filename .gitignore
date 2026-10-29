@@ -18,3 +18,5 @@ dataset/
 results/
 models/
 
+.vercel
+.env*
