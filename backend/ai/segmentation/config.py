@@ -33,10 +33,10 @@ class SegmentationConfig:
     save_masks: bool = True
     save_segmented_images: bool = True
 
-    points_per_side: int = 16
+    points_per_side: int = 12
     pred_iou_thresh: float = 0.70
     stability_score_thresh: float = 0.85
-    crop_n_layers: int = 1
+    crop_n_layers: int = 0
     min_mask_region_area: int = 100
 
 

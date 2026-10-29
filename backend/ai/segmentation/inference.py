@@ -54,8 +54,13 @@ class SAM2Inference:
         No leaf-mask selection or image rendering is performed here.
         """
 
+        import gc
+        import torch
         rgb_array = _as_rgb_array(image)
-        return self.mask_generator.generate(rgb_array)
+        with torch.inference_mode():
+            masks = self.mask_generator.generate(rgb_array)
+        gc.collect()
+        return masks
 
     def segment_image(self, image: RGBImage) -> SegmentationResult:
         """Select one leaf-foreground mask and render a masked RGB image.
