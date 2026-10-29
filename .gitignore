@@ -1,0 +1,20 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+*.log
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.git/
+
+# Project backups
+frontend-backup-*/
+frontend-next-failed-*/
+# Large/local project data
+dataset/
+results/
+models/
+
